@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(72, 169, 218, 0.364);
+}
+.heading {
+  margin-top: 30px;
+  display: flex;
+  color: blueviolet;
+  font-size: 2.7rem;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 70vh;
+  border-radius: 20px;
+  margin-top: 40px;
+  border: 2px solid rgba(63, 70, 73, 0.364);
+  box-shadow: 10px 10px 20px rgba(72, 169, 218, 0.364),
+    10px 10px 20px rgba(72, 169, 218, 0.364),
+    10px 10px 20px rgba(72, 169, 218, 0.364),
+    inset 10px 10px 17px rgba(72, 169, 218, 0.364),
+    inset 10px 10px 30px rgba(63, 70, 73, 0.364),
+    inset 10px 10px 17px rgba(72, 169, 218, 0.364);
+}
+.discription {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: rgb(55, 94, 236);
+}
+.container #bill-amount,
+label,
+#cash-given {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 20px;
+  font-size: 1.1rem;
+  outline: none;
+  margin-top: 10px;
+  padding: 4px 7px;
+}
+.checkbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  padding: 10px;
+  font-size: 1.2rem;
+  color: #fff;
+  border: rgba(72, 169, 218, 0.364);
+  border-radius: 5px;
+  background: rgba(14, 15, 20, 0.699);
+}
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  height: 70px;
+  width: 50%;
+  color: red;
+}
+.container .return-table {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  /* margin: 10px 10%; */
+}
+.container .return-table .wapas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  font-size: 1.4em;
+
+  color: darkslateblue;
+}
+.container .return-table tr {
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  margin-left: 13px;
+  table-layout: 50%;
+
+  width: 80%;
+}
+.container .return-table th,
+td {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+
+  padding: 5px;
+  height: 30px;
+  border: 1px solid black;
+}
+@media only screen and (max-width: 900px) {
+  .container {
+    width: 95%;
+    height: auto;
+  }
+  .return-table tr td {
+    width: 40px;
+  }
+  .heading {
+    font-size: 2rem;
+  }
+  .discription {
+    margin: 10px 30px;
+  }
+}
